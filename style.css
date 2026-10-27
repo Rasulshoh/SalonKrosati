@@ -1,0 +1,519 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #18312b;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sahifa {
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.sarlavha {
+  height: 70px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.bar {
+  width: min(100% - 120px, 960px);
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  display: block;
+  width: 166px;
+  height: auto;
+}
+
+.menyu {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.menyu-band {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: #18312b;
+  font-size: 13px;
+  cursor: default;
+  border-bottom: 2px solid transparent;
+}
+
+.menyu-band:hover {
+  color: #68b99f;
+  border-bottom-color: #68b99f;
+}
+
+.menyu-band.faol {
+  color: #68b99f;
+  border-bottom-color: #68b99f;
+}
+
+.menyu-tugma {
+  display: none;
+}
+
+.qahramon {
+  min-height: calc(100vh - 70px);
+  padding: 75px max(8%, calc((100% - 960px) / 2));
+  display: grid;
+  grid-template-columns: 0.85fr 1.4fr;
+  align-items: center;
+  gap: 48px;
+  border-bottom: 1px solid #cff5e9;
+}
+
+.qahramon-matn h1 {
+  margin: 0 0 18px;
+  color: #18312b;
+  font-size: 32px;
+  line-height: 1.28;
+}
+
+h2 {
+  margin: 0 0 18px;
+  color: #18312b;
+  font-size: 32px;
+  line-height: 1.28;
+}
+
+.qahramon-matn p {
+  color: #777b79;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.mo-matn p {
+  color: #777b79;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.kart p {
+  color: #777b79;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.fikr-kart p {
+  color: #777b79;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.aloqa-matn p {
+  color: #777b79;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.qahramon-rasm img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.mo-rasm img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.tugma {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  margin-top: 12px;
+  padding: 0 25px;
+  border-radius: 3px;
+  background: #68b99f;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: default;
+  transition: background 0.2s ease;
+}
+
+.tugma:hover {
+  background: #519f87;
+}
+
+.mo {
+  min-height: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 55px;
+  padding: 75px 0;
+}
+
+.mo-rasm {
+  margin-left: -1px;
+}
+
+.mo-matn {
+  padding: 0 70px 0 0;
+}
+
+.mo-matn h2 {
+  font-size: 30px;
+}
+
+.aloqa-matn h2 {
+  font-size: 30px;
+}
+
+.xizmat {
+  padding: 95px 8% 100px;
+  background: #fafafa;
+}
+
+.sarlavha-bahsh {
+  max-width: 540px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.sarlavha-bahsh h2 {
+  margin-bottom: 12px;
+  font-size: 30px;
+}
+
+.sarlavha-bahsh p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.xizmat-karton {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+
+.kart {
+  min-height: 275px;
+  padding: 36px 26px 30px;
+  border-bottom: 4px solid #68b99f;
+  background: #ffffff;
+  box-shadow: 0 2px 14px #18312b12;
+  text-align: center;
+}
+
+.kart img {
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+}
+
+.kart h3 {
+  margin: 20px 0 10px;
+  font-size: 20px;
+}
+
+.kart p {
+  max-width: 235px;
+  margin: 0 auto;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.fikr {
+  padding: 92px 8% 100px;
+}
+
+.fikr .sarlavha-bahsh {
+  max-width: 470px;
+  margin-bottom: 42px;
+}
+
+.fikr-karton {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 26px;
+}
+
+.fikr-kart {
+  min-height: 210px;
+  padding: 30px 34px;
+  box-shadow: 0 2px 14px #18312b12;
+}
+
+.fikr-kart p {
+  margin: 0 0 18px;
+  color: #18312b;
+}
+
+.нохунак {
+  color: #68b99f;
+  font-size: 24px;
+}
+
+.fikr-kart img {
+  width: 145px;
+  height: auto;
+}
+
+.нуктаҳо {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 42px;
+}
+
+.нуктаҳо span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #dddddd;
+}
+
+.нуктаҳо span:first-child {
+  background: #68b99f;
+}
+
+.aloqa {
+  min-height: 400px;
+  padding: 70px 9%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+  background: #fafafa;
+}
+
+.aloqa-matn {
+  max-width: 400px;
+}
+
+.aloqa-matn p {
+  max-width: 330px;
+}
+
+.aloqa-рӯйхат {
+  display: grid;
+  gap: 25px;
+}
+
+.aloqa-сатр {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: #777b79;
+  font-size: 15px;
+}
+
+.aloqa-сатр span {
+  width: 22px;
+  color: #68b99f;
+  font-size: 20px;
+}
+
+.поён {
+  min-height: 190px;
+  padding: 38px 9%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  gap: 14px;
+  background: #68b99f;
+  color: #ffffff;
+}
+
+.поён-logo {
+  grid-column: 1;
+  color: #18312b;
+  font-size: 29px;
+  font-weight: 700;
+}
+
+.поён-logo span {
+  color: #ffffff;
+}
+
+.поён-матн {
+  grid-column: 1;
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+.шабака {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: center;
+  justify-self: end;
+}
+
+.шабака img {
+  display: block;
+  width: 86px;
+  height: auto;
+}
+
+@media (max-width: 500px) {
+  .sahifa {
+    width: 100%;
+  }
+
+  .sarlavha {
+    height: 64px;
+  }
+
+  .bar {
+    width: auto;
+    margin: 0 20px;
+  }
+
+  .logo img {
+    width: 145px;
+  }
+
+  .menyu-tugma {
+    width: 34px;
+    display: grid;
+    gap: 5px;
+    cursor: default;
+  }
+
+  .menyu-tugma span {
+    height: 2px;
+    background: #18312b;
+  }
+
+  .menyu {
+    position: absolute;
+    z-index: 2;
+    top: 64px;
+    right: 0;
+    left: 0;
+    height: auto;
+    padding: 12px 20px;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    background: #ffffff;
+    box-shadow: 0 8px 14px #18312b14;
+  }
+
+  .menyu-band {
+    min-height: 42px;
+    border-bottom: 1px solid #eeeeee;
+  }
+
+  .qahramon {
+    min-height: calc(100vh - 64px);
+    padding: 52px 22px 55px;
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .qahramon-matn h1 {
+    font-size: 29px;
+  }
+
+  .qahramon-matn p {
+    font-size: 14px;
+  }
+
+  .mo {
+    padding: 54px 22px;
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .mo-rasm {
+    margin: 0;
+  }
+
+  .mo-matn {
+    padding: 0;
+  }
+
+  .mo-matn h2 {
+    font-size: 26px;
+  }
+
+  .aloqa-matn h2 {
+    font-size: 26px;
+  }
+
+  .sarlavha-bahsh h2 {
+    font-size: 26px;
+  }
+
+  .xizmat {
+    padding: 60px 22px;
+  }
+
+  .fikr {
+    padding: 60px 22px;
+  }
+
+  .sarlavha-bahsh {
+    margin-bottom: 32px;
+  }
+
+  .xizmat-karton {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .fikr-karton {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .kart {
+    min-height: 250px;
+  }
+
+  .fikr-kart {
+    min-height: 0;
+    padding: 24px;
+  }
+
+  .нуктаҳо {
+    margin-top: 30px;
+  }
+
+  .aloqa {
+    min-height: 0;
+    padding: 58px 24px;
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .aloqa-сатр {
+    font-size: 14px;
+  }
+
+  .поён {
+    padding: 32px 24px;
+  }
+
+  .поён-logo {
+    font-size: 25px;
+  }
+
+  .шабака {
+    font-size: 17px;
+  }
+}
